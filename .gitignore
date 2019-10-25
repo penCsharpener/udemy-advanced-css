@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+*.zip
+/img/*.png
+/img/*.jpg
+/img/*.webm
+/img/*.mp4
