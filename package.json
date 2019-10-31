@@ -1,0 +1,22 @@
+{
+  "name": "udemy-advanced-css",
+  "version": "1.0.0",
+  "description": "to make this code along repo work download the zip file of Jonas' [github repo](https://github.com/jonasschmedtmann/advanced-css-course) and drop the images and videos into `/img`",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penCsharpener/udemy-advanced-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/penCsharpener/udemy-advanced-css/issues"
+  },
+  "homepage": "https://github.com/penCsharpener/udemy-advanced-css#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
