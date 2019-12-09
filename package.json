@@ -18,5 +18,6 @@
   "homepage": "https://github.com/penCsharpener/udemy-advanced-css#readme",
   "devDependencies": {
     "node-sass": "^4.13.0"
-  }
+  },
+  "dependencies": {}
 }
