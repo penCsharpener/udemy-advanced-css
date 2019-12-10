@@ -1,6 +1,5 @@
 .row {
   max-width: $grid-width;
-  background-color: #eee;
   margin: 0 auto;
 
   // applies to everything except the last child
@@ -13,7 +12,6 @@
   // attribute selector
   // ^= selects all classes beginning with, *= is contains, $= is endsWith
   [class^='col-'] {
-    background-color: orangered;
     float: left;
 
     &:not(:last-child) {
