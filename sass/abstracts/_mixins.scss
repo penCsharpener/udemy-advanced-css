@@ -1,0 +1,7 @@
+@mixin clearfix {
+  &::after {
+    content: ''; // so that the pseudo-element actually shows on the page
+    display: table;
+    clear: both; // both float left and right
+  }
+}
