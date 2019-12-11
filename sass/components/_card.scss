@@ -15,7 +15,7 @@
     width: 100%;
     backface-visibility: hidden;
     border-radius: 0.3rem;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    box-shadow: $shadow-small;
 
     &--front {
       background-color: $color-white;
