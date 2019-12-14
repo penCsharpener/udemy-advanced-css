@@ -23,14 +23,43 @@
     clip-path: circle(50% at 50% 50%);
     // floating elements should need be positioned with margin/padding
     transform: translateX(-3rem) skewX(12deg);
+    position: relative;
   }
 
   &__img {
     height: 100%;
-    transform: translateX(-15%);
+    transform: translateX(-15%) scale(1.4);
+    // as of Firefox 71 this is not needed to avoid cutting of the circle
+    backface-visibility: hidden;
+    transition: all 0.5s;
   }
 
   &__text {
     transform: skewX(12deg);
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__img {
+    transform: translateX(-15%) scale(1);
+    // brightness lower than 100% makes it darker
+    filter: blur(3px) brightness(80%);
   }
 }
