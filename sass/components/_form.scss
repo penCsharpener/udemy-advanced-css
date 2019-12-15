@@ -15,10 +15,11 @@
     border-bottom: 3px solid transparent;
     width: 90%;
     display: block;
+    transition: all 0.3s;
 
     &:focus {
       outline: none;
-      box-shadow: 0 1rem 2rem rgba($color-white, 0.1);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
       border-bottom: 3px solid $color-primary;
     }
 

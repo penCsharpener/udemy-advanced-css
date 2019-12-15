@@ -397,10 +397,11 @@ body {
   border: none;
   border-bottom: 3px solid transparent;
   width: 90%;
-  display: block; }
+  display: block;
+  transition: all 0.3s; }
   .form__input:focus {
     outline: none;
-    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #7ed56f; }
   .form__input:focus:invalid {
     border-bottom: 3px solid #ff7730; }
