@@ -8,13 +8,13 @@
 
 html {
   font-size: 62.5%; // 1 rem = 10px; 10px/16px = 62,5%
-  
-    @include respond(tab-land) {
-      font-size: 56.25%; // 1 rem = 8px, 9/16 = 56.25%
-    }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1 rem = 8px, 9/16 = 56.25%
+  }
 
   @include respond(tab-port) {
-    font-size: 50%;  // 1 rem = 8px, 8/16 = 50%
+    font-size: 50%; // 1 rem = 8px, 8/16 = 50%
   }
 
   @include respond(phone) {
@@ -32,4 +32,9 @@ body {
   @include respond(tab-port) {
     padding: 0;
   }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
 }
