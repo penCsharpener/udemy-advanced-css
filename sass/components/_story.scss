@@ -23,17 +23,24 @@
   &__shape {
     width: 15rem;
     height: 15rem;
-    // shape-outside only works when it has a height, width and floats
     float: left;
-    // 50% radius of the surrounding element: 7.5rem
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
 
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
     // floating elements should need be positioned with margin/padding
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
+    overflow: hidden;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      // 50% radius of the surrounding element: 7.5rem
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+
+      // shape-outside only works when it has a height, width and floats
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+
+      border-radius: none;
+    }
 
     @include respond(phone) {
       transform: translateX(-3rem) skewX(0);
