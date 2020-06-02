@@ -15,6 +15,7 @@
         .container {
             background-color: #ccc;
             padding: 10px;
+            height: 1000px;
 
             display: flex;
             flex-direction: row-reverse;
@@ -33,12 +34,20 @@
             align-items: baseline;
             align-items: center;
 
+            flex-wrap: wrap;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-around;
+            align-content: space-between;
+            align-content: stretch;
+            align-content: flex-start;
         }
 
         .item {
             background-color: #f1425d;
             padding: 30px;
             margin: 30px;
+            margin: 5px;
             color: #fff;
             font-size: 40px;
 
@@ -70,9 +79,9 @@
         .i4 {
             font-size: 90px;
             font-size: 40px;
-            align-self: flex-start;
+            /* align-self: flex-start;
             align-self: stretch;
-            align-self: flex-end;
+            align-self: flex-end; */
             order: -1;
         }
     </style>
@@ -85,6 +94,11 @@
         <div class="item i3">3</div>
         <div class="item i4">4</div>
         <div class="item i5">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
     </div>
 </body>
 
