@@ -1,0 +1,7 @@
+{
+  "media query": {
+    "prefix": "mediamax",
+    "body": ["@media only screen and (max-width: $$1) {", "$0", "}"],
+    "description": "Adds media query with max-width"
+  }
+}

@@ -18,6 +18,8 @@ $font-display: 'Josefin Sans', sans-serif;
 
 $bp-lx: 75em; // 1200px divided by 16 pixel which is browser default
 $bp-l: 62.5em; // 1000px
+$bp-m: 50em; // 800px
+$bp-s: 37.5em; // 600px
 
 *,
 *::before,
@@ -57,5 +59,9 @@ body {
       [full-start] minmax(6rem, 1fr)
       [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
       [center-end] minmax(6rem, 1fr) [full-end];
+  }
+
+  @media only screen and (max-width: $bp-m) {
+    grid-template-rows: 6rem calc(100vh - 6rem);
   }
 }
